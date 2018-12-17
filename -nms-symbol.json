@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "cls_prob", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "loc_preds", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "anchor_boxes", 
+      "inputs": []
+    }, 
+    {
+      "op": "_contrib_MultiBoxDetection", 
+      "name": "detection", 
+      "attrs": {
+        "force_suppress": "True", 
+        "nms_threshold": "0.5", 
+        "nms_topk": "400", 
+        "variances": "(0.1, 0.1, 0.2, 0.2)"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0], [2, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [0, 1, 2], 
+  "node_row_ptr": [0, 1, 2, 3, 4], 
+  "heads": [[3, 0, 0]], 
+  "attrs": {"mxnet_version": ["int", 10301]}
+}

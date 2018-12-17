@@ -1,0 +1,5 @@
+*.params
+__pycache__
+*pyc
+*tmp
+cxx
